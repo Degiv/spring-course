@@ -2,10 +2,10 @@ package com.degiv.springcourse;
 
 import org.springframework.stereotype.Component;
 
-@Component("musicBean")
 public class ClassicalMusic implements Music {
     private ClassicalMusic() {}
-    static public ClassicalMusic getClassicMusic() {
+    //fabric method just to learn how it interacts with spring
+    static public ClassicalMusic createClassicalMusic() {
         return new ClassicalMusic();
     }
     public void doMyInit() {
